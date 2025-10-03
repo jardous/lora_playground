@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-# generates public key stored in receiver.pem and private key stored in private.pem.
-# These files will be used in the examples below. Every time,
-# it generates different public key and private key pair.
+# generates public key stored in receiver_XXX.pem
+# and private key stored in private_XXX.pem.
 #
-# https://pycryptodome.readthedocs.io/en/latest/src/examples.html#generate-an-rsa-key
-#
+# Author: Jiri Popek
+# Date: 2024-06-20
+# Requires pycryptodome package: pip install pycryptodome
+# Usage: python3 generate_keys.py XXX
+# where XXX is an identifier for the key pair
+
 import sys
 import os.path
 from Crypto.PublicKey import RSA

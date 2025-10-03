@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
-
-# https://pycryptodome.readthedocs.io/en/latest/src/examples.html#generate-an-rsa-key
+# Description: Encrypt and sign a message using RSA and AES encryption
+#
+# Author: Jiri Popek
+# Date: 2024-06-20
+#
+# Requirements: pycryptodome
 
 from Crypto.Signature import pkcs1_15
 from Crypto.Hash import SHA256
